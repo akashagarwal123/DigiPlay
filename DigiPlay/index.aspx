@@ -37,7 +37,8 @@
                 </ItemTemplate>
             </asp:DataList></a>
         </li>
-          <li><a href="Login.aspx" style="height:2cm;width:5cm;color:white">Logout</li>
+          <li><a href="Login.aspx" style="height:2cm;width:5cm;color:white">Logou</a></li>
+          <li><a href="Rent.aspx" style="height:2cm;width:5cm;color:white">Rent Equipments</a></li>
       </ul>
     </div>
   </nav>
@@ -112,6 +113,7 @@
         <li><a href="BookGround.aspx" style="height:2cm;width:5cm;color:white">Book a Ground</a></li>
         <li><a href="BookCoach.aspx" style="height:2cm;width:5cm;color:white">Book a Coach</a></li>
         <li><a href="Buy.aspx" style="height:2cm;width:5cm;color:white">Buy an Equipment</a></li>
+     <li><a href="Rent.aspx" style="height:2cm;width:5cm;color:white">Rent Equipments</a></li>
         <li><a href="Wallet.aspx" style="height:2cm;width:5cm;color:white">Add Money</a></li>
 </div>
  
