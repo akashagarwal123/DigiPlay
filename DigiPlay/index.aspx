@@ -22,7 +22,7 @@
       </div>
       <ul class="nav navbar-nav">
         <li><a href="BookGround.aspx" style="height:2cm;width:4cm;color:white">Book a Ground</a></li>
-        <li><a href='book a coach.html' style="height:2cm;width:4cm;color:white">Book a Coach</a></li>
+        <li><a href="BookCoach.aspx" style="height:2cm;width:4cm;color:white">Book a Coach</a></li>
         <li><a href='book a equipment.html' style="height:2cm;width:5cm;color:white">Book a Equipment</a></li>
         <li><a href="Wallet.aspx" style="height:2cm;width:5cm;color:white">Add Money</a></li>
         <li>
@@ -109,7 +109,7 @@
   <!-- Links -->
    <b style="font-size:0.5cm ; color:white">Quick Links</b>
         <li><a href="BookGround.aspx" style="height:2cm;width:5cm;color:white">Book a Ground</a></li>
-        <li><a href='book a coach.html' style="height:2cm;width:5cm;color:white">Book a Coach</a></li>
+        <li><a href="BookCoach.aspx" style="height:2cm;width:5cm;color:white">Book a Coach</a></li>
         <li><a href='book a equipment.html' style="height:2cm;width:5cm;color:white">Book a Equipment</a></li>
         <li><a href="Wallet.aspx" style="height:2cm;width:5cm;color:white">Add Money</a></li>
 </div>

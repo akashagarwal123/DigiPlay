@@ -62,8 +62,7 @@
             <br />
         </div>
         </center>
-    </form>
-    <center>
+         <center>
                <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical">
                    <AlternatingItemStyle BackColor="White" />
                    <FooterStyle BackColor="#CCCC99" />
@@ -101,5 +100,7 @@
                    <SelectedItemStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
             </asp:DataList>
     </center>
+    </form>
+   
 </body>
 </html>

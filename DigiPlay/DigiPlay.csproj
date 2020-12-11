@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BookCoach.aspx" />
     <Content Include="BookGround.aspx" />
     <Content Include="ForgetPassword.aspx" />
     <Content Include="Images\logo.png" />
@@ -78,6 +79,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookCoach.aspx.cs">
+      <DependentUpon>BookCoach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookCoach.aspx.designer.cs">
+      <DependentUpon>BookCoach.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BookGround.aspx.cs">
       <DependentUpon>BookGround.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
