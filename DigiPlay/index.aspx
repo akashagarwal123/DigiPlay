@@ -37,7 +37,7 @@
                 </ItemTemplate>
             </asp:DataList></a>
         </li>
-          <li><a href="Login.aspx" style="height:2cm;width:5cm;color:white">Logou</a></li>
+          <li><a href="Login.aspx" style="height:2cm;width:5cm;color:white">Logout</a></li>
           <li><a href="Rent.aspx" style="height:2cm;width:5cm;color:white">Rent Equipments</a></li>
       </ul>
     </div>
@@ -119,7 +119,7 @@
  
  <div class="col-md-2 mx-auto" style="margin-top:2%">
   <b style="font-size:0.5cm ; color:white">Register</b><br>
-  <a href='register.html' style="height:2cm;width:5cm;color:white">Register as a sportsman</a>
+  <a href="Registration.aspx" style="height:2cm;width:5cm;color:white">Register as a sportsman</a>
 </div>
 
 </div><br>

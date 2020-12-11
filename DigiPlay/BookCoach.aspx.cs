@@ -25,7 +25,7 @@ namespace DigiPlay
                 conn.Open();
                 SqlCommand cmd = conn.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "Select * from user_coach_booking where Status='" + str + "'";
+                cmd.CommandText = "Select * from user_coach_booking";
                 cmd.ExecuteNonQuery();
                 DataTable dt = new DataTable();
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
