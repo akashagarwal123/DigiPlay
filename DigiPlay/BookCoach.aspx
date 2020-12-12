@@ -16,9 +16,7 @@
                 <br />
 
                 <br />
-                <br />
-
-                Ground ID
+                Booking ID
                 <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 <br />
                 <br />

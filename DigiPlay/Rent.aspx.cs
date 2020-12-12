@@ -109,7 +109,7 @@ namespace DigiPlay
                         int a = cmd.ExecuteNonQuery();
                         if (a >= 1)
                         {
-                            Label1.Text = " Money Sucessfully added!!!";
+                            Label1.Text = " Money Sucessfully deducted!!!";
                             Label1.ForeColor = System.Drawing.Color.Green;
                         }
                     }
@@ -118,7 +118,7 @@ namespace DigiPlay
             }
             catch (Exception)
             {
-                Label1.Text = " Money not Sucessfully added !!!";
+                Label1.Text = " Money not Sucessfully deducted !!!";
                 Label1.ForeColor = System.Drawing.Color.DarkRed;
             }
         }

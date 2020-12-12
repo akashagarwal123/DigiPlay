@@ -40,28 +40,37 @@ namespace DigiPlay
         {
             try
             {
-                int coach_price = price();
-                int wallet_value = wallet_price();
-                int net_value = wallet_value - coach_price;
-                wallet_update(net_value);
-                String status = "Booked";
-                int ID = Int32.Parse(TextBox1.Text);
-                using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-T7J349M\SQLEXPRESS01;Initial Catalog=digiplay;Integrated Security=True"))
+                if (check_status() == "Booked")
                 {
+                    Label1.Text = "Already Boooked!!!";
 
-                    using (SqlCommand cmd = new SqlCommand("update user_coach_booking set Status='" + status + "' where coach_booking_Id = " + ID + "", conn))
+                }
+                else
+                {
+                    int coach_price = price();
+                    int wallet_value = wallet_price();
+                    int net_value = wallet_value - coach_price;
+                    wallet_update(net_value);
+                    String status = "Booked";
+                    int ID = Int32.Parse(TextBox1.Text);
+                    using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-T7J349M\SQLEXPRESS01;Initial Catalog=digiplay;Integrated Security=True"))
                     {
-                        conn.Open();
-                        int a = cmd.ExecuteNonQuery();
-                        if (a >= 1)
+
+                        using (SqlCommand cmd = new SqlCommand("update user_coach_booking set Status='" + status + "' where coach_booking_Id = " + ID + "", conn))
                         {
-                            Label1.Text = " Booked Sucessfully!!!";
-                            Label1.ForeColor = System.Drawing.Color.Green;
+                            conn.Open();
+                            int a = cmd.ExecuteNonQuery();
+                            if (a >= 1)
+                            {
+                                Label1.Text = " Booked Sucessfully!!!";
+                                Label1.ForeColor = System.Drawing.Color.Green;
+                            }
                         }
+                        conn.Close();
                     }
-                    conn.Close();
                 }
             }
+
             catch (Exception)
             {
                 Label1.Text = " Not booked Sucessfully!!!";
@@ -135,7 +144,7 @@ namespace DigiPlay
                         int a = cmd.ExecuteNonQuery();
                         if (a >= 1)
                         {
-                            Label1.Text = " Money Sucessfully added!!!";
+                            Label1.Text = " Money Sucessfully deducted!!!";
                             Label1.ForeColor = System.Drawing.Color.Green;
                         }
                     }
@@ -144,9 +153,36 @@ namespace DigiPlay
             }
             catch (Exception)
             {
-                Label1.Text = " Money not Sucessfully added !!!";
+                Label1.Text = " Money not Sucessfully deducted !!!";
                 Label1.ForeColor = System.Drawing.Color.DarkRed;
             }
+        }
+        public string check_status()
+        {
+
+            String status = "";
+            int ID = Int32.Parse(TextBox1.Text);
+                using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-T7J349M\SQLEXPRESS01;Initial Catalog=digiplay;Integrated Security=True"))
+                {
+                    String query = "(Select Status from user_coach_booking where coach_booking_id=" + ID + ")";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    conn.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.HasRows)
+                    {
+                        while (dr.Read())
+                        {
+                            status = dr.GetString(0);
+                        }
+
+                    }
+                    else
+                    {
+                        Label1.Text = "No data";
+                    }
+                }
+                return status;
+  
         }
     }
 }

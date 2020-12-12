@@ -95,7 +95,7 @@
   <div class="row" style="justify-content: center;">
     
       <!-- <b style="font-size:0.5cm ; color:white">DigiPlay</b> -->
-      <img src="images/logo.png" alt="Chicago" style="height:2cm;width:6cm; ">
+      <img src="images/logo.png" alt="Chicago">
   </div></center>
   <div class="row">
     <!-- Grid column -->
@@ -106,7 +106,7 @@
       <p style="font-size:0.4cm ; color:white">Career</p>
       <p style="font-size:0.4cm ; color:white">Terms and Conditions</p>
  </div>
- <div class="col-md-2 mx-auto" style="margin-top:2% ">
+ <div class="col-md-2 mx-auto">
 
   <!-- Links -->
    <b style="font-size:0.5cm ; color:white">Quick Links</b>
@@ -118,8 +118,7 @@
 </div>
  
  <div class="col-md-2 mx-auto" style="margin-top:2%">
-  <b style="font-size:0.5cm ; color:white">Register</b><br>
-  <a href="Registration.aspx" style="height:2cm;width:5cm;color:white">Register as a sportsman</a>
+  <img src="https://wallpaperaccess.com/full/343549.jpg" height="200" width="300"/>
 </div>
 
 </div><br>
